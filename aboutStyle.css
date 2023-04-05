@@ -202,6 +202,27 @@ span
     {
         flex-direction: column;
     }
+    .about-img::before
+    {
+        content: "";
+        width: 45rem;
+        height: 45rem;
+        border-radius: 50%;
+        background-size: cover;
+        background: linear-gradient(var(--bg-color),var(--main-color));
+        animation: rotate 3s infinite ease;
+    }
+    .about-img::after
+    {
+        content: "";
+        position: absolute;
+        width: 42rem;
+        height: 42rem;
+        border-radius: 50%;
+        background-image: url(img/profiles/JIBIN\ REJI\ .png);
+        background-color: var(--second-bg-color);
+        background-size: cover;
+    }
 }
 
 
