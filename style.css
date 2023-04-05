@@ -90,7 +90,7 @@ section
     width: 100%;
     height: 100%;
 }
-.home-img
+.home-img-container
 {
     display: flex;
     justify-content: center;
@@ -98,6 +98,36 @@ section
     width: 100%;
     height: 400px;
 }
+.home-profile
+{
+    animation: floatImage 4s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-profile::before
+{
+    content: "";
+    width: 40rem;
+    height: 40rem;
+    background: linear-gradient( 60deg,rgb(0, 181, 252),yellow,red);
+    border-radius: 50%;
+    filter: blur(50px);
+}
+.home-profile::after
+{
+    content: "";
+    width: 38rem;
+    height: 38rem;
+    border-radius: 50%;
+    position: absolute;
+    border: solid;
+    background-color: #000000;
+    background-image: url(img/profiles/JIBIN\ REJI\ .png);
+    background-size: cover;
+} 
+
+
 .home-content h3
 {
     font-size: 3.2rem;
@@ -162,14 +192,6 @@ span
 .btn:hover
 {
     scale: 1.07;
-}
-.home-img img
-{
-    width: 35rem;
-    height: 50rem;
-    border-radius: 50px;
-    animation: floatImage 4s ease-in-out infinite;
-    filter: drop-shadow(0px 0px 20px var(--main-color));
 }
 @keyframes floatImage 
 {
@@ -500,11 +522,20 @@ span
     {
         font-size: 5rem;
     }
-    .home-img img 
+    .home-profile 
     {
-        width: 40rem;
-        height: 40rem;
         margin-top: 4rem;
+    }
+    .home-profile::before
+    {
+        width: 35rem;
+        height: 35rem;
+        filter: blur(35px);
+    }
+    .home-profile::after
+    {
+        width: 30rem;
+        height: 30rem;
     }
     .about 
     {
