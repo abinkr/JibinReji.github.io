@@ -98,8 +98,6 @@ section
     background: linear-gradient(var(--bg-color),var(--main-color)
     , var(--text-color),var(--second-bg-color));
     border-radius: 50%;
-    width: 45rem;
-    height: 45rem;
     display: flex;
     align-items: center;
     justify-content: center;
