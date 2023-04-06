@@ -219,12 +219,58 @@ span
     gap: 5rem;
     background: var(--second-bg-color);
 }
-.about-img img
+.about-img-container
 {
-    width: 35rem;
-    height: 50rem;
-    border-radius: 50px;
-    filter: drop-shadow(0px 0px 20px var(--bg-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+}
+.about-profile
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.about-profile::before
+{
+    content: "";
+    width: 40rem;
+    height: 40rem;
+    background: linear-gradient( 60deg,rgb(0, 181, 252),yellow,red);
+    filter: blur(50px);
+    animation: rotate 1s ease-in-out infinite;
+    border-radius: 50%;
+}
+.about-profile::after
+{
+    content: "";
+    width: 38rem;
+    height: 38rem;
+    border-radius: 50%;
+    position: absolute;
+    border: solid;
+    background-color: #14213d;
+    background-image: url(img/profiles/JIBIN\ REJI\ .png);
+    background-size: cover;
+}
+@keyframes rotate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    50%
+    {
+        transform: rotate(180deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
 }
 .heading
 {
