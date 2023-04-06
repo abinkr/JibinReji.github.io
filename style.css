@@ -78,7 +78,6 @@ section
 .home
 {
     display: flex;
-  
     align-items: center;
 }
 .home-content
