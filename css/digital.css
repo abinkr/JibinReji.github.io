@@ -87,7 +87,7 @@ span
 {
     color: #fca311;
 }
-.graphic-box
+.digital-box
 {
     margin-top: 8rem;
     width: 100%;
@@ -96,17 +96,17 @@ span
     background: var(--second-bg-color);
     overflow: scroll;
 }
-.graphic-box i 
+.digital-box i 
 {
     margin-top: 20px;
     font-size: 15rem;
     color: var(--main-color);
 }
-.graphic-box h3
+.digital-box h3
 {
     font-size: 3.6rem;
 }
-.graphic-box p 
+.digital-box p 
 {
     font-size: 1.9rem;
     margin: 1rem 0 3rem;
@@ -158,12 +158,12 @@ span
         font-size: 2rem;
         margin: 3rem 0;
     }
-    .graphic-box
+    .digital-box
     {
       display: block; 
       padding: 0 1rem ;
     }
-    .graphic-box i 
+    .digital-box i 
     {
         font-size: 15rem;
     }
