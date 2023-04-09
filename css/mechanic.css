@@ -19,7 +19,7 @@
 :root
 {
     --bg-color: #000000;
-    --second-bg-color: #14213d;
+    --second-bg-color: #13161e;
     --text-color: #ffffff;
     --main-color: #fca311;
 }
@@ -90,7 +90,7 @@ section
     display: flex;
     width: 100%;
     height: 90vh;
-    background: #14213d;
+    background: var(--second-bg-color);
     padding: 0 3rem ;
     overflow: scroll;
 }
@@ -185,10 +185,6 @@ section
     .rightSide
     {
         height: 150vh;
-    }
-    .leftSide
-    {
-      
     }
     .leftSide i
     {
