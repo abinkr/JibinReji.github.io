@@ -82,77 +82,53 @@ section
     display: none;
 }
 
-/*------about section-------------*/
-.about
+/*----------mechanic section----------*/
+.mechanic-box
 {
+    position: fixed;
+    top: 10vh;
+    display: flex;
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    background: var(--second-bg-color);
-    margin-top: 10vh;
+    height: 90vh;
+    background: #14213d;
+    padding: 0 3rem ;
+    overflow: scroll;
 }
-.about-img
+.rightSide
 {
-    background: linear-gradient(var(--bg-color),var(--main-color)
-    , var(--text-color),var(--second-bg-color));
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -4rem;
-
-
+    flex: 1;
+    overflow: scroll;
+    height: 90vh;
 }
-.about-img::before
+.mechanic-box i 
 {
-    content: "";
-    width: 45rem;
-    height: 45rem;
-    border-radius: 50%;
-    background-size: cover;
-    background: linear-gradient(var(--bg-color),var(--main-color));
-    animation: rotate 3s infinite ease;
-}
-.about-img::after
-{
-    content: "";
-    position: absolute;
-    width: 42rem;
-    height: 42rem;
-    border-radius: 50%;
-    background-image: url(img/profiles/JIBIN\ REJI\ .png);
-    background-color: var(--second-bg-color);
-    background-size: cover;
-}
-
-.heading
-{
-    text-align: center;
-    font-size: 4.5rem;
-}
-.about-content h2
-{
-    text-align: left;
-    line-height: 1.5;
-}
-.about-content h3 
-{
-    font-size: 2.6rem;
-}
-.about-content p 
-{
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
-}
-span
-{
+    margin-top: 5rem;
+    font-size: 10rem;
     color: var(--main-color);
 }
-
-/*-------key frame--------*/
+.mechanic-box h3
+{
+    font-size: 3.6rem;
+}
+.mechanic-box p 
+{
+    font-size: 1.9rem;
+    margin: 1rem 0 3rem;
+}
+.leftSide
+{
+    flex: 1;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftSide i
+{
+    display: flex;
+    font-size: 50rem;
+}
+/*-------media frame--------*/
 
 @media (max-width: 1200px) 
 {
@@ -199,45 +175,26 @@ span
         font-size: 2rem;
         margin: 3rem 0;
     }
-
-    /*------about section-----*/
-    .about 
+    .mechanic-box
     {
-        flex-direction: column;
+        position: initial;
+        top: 10vh;
+        flex-direction: column-reverse;
+        height: 200vh;
     }
-    .about-img::before
+    .rightSide
     {
-        content: "";
-        width: 40rem;
-        height: 40rem;
-        border-radius: 50%;
-        background-size: cover;
-        background: linear-gradient(var(--bg-color),var(--main-color));
-        animation: rotate 3s infinite ease;
+        height: 150vh;
     }
-    .about-img::after
+    .leftSide
     {
-        content: "";
-        position: absolute;
-        width: 38rem;
-        height: 38rem;
-        border-radius: 50%;
-        background-image: url(img/profiles/JIBIN\ REJI\ .png);
-        background-color: var(--second-bg-color);
-        background-size: cover;
+      
     }
-}
-
-
-/*-------key frame-------*/
-@keyframes rotate 
-{
-    0%
+    .leftSide i
     {
-        transform: rotatey(0deg);
+        display: flex;
+        font-size: 35rem;
     }
-    50%
-    {
-        transform: rotate(360deg);
-    }
+   
+    
 }
