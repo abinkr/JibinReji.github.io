@@ -178,17 +178,17 @@
         <section class="contact" id="contact">
             <h2 class="heading">Contact <span>Me!</span></h2>
 
-            <form action="#">
-                <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email Address">
+            <form id="gform" method="post" action="https://script.google.com/macros/s/AKfycby8QBICmUdGBZxFPEei7s2bZKc7iYtvc8hVJGlrRrKZNGJ0P_pqjWFIQl2_ijmpFgsd/exec">
+                <div class="input-box" >
+                    <input type="text" name="fname" placeholder="Full Name">
+                    <input type="email" name="email" placeholder="Email Address">
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Mobile Number">
-                    <input type="text" placeholder="Email Subject">
+                    <input type="number" name="phone" placeholder="Mobile Number">
+                    <input type="text" name="emailSubject" placeholder="Email Subject">
                 </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="submit" class="btn">
             </form>
         </section>
 
